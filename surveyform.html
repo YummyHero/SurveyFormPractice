@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pet Expenditure Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Pet Expenditure Survey Form</h1>
+    <p id="description" class="description">The survey aims to understand the financial aspects of pet ownership, specifically how much individuals are willing to spend on their pets.</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend class="legend-yourself">Something about yourself</legend>
+        <label for="name" id="name-label">
+          Name:
+          <input id="name" name="name" type="text" required placeholder="Enter you name">
+        </label>
+        <label for="email" id="email-label">
+          Email:
+          <input id="email" name="email" type="email" required placeholder="Enter your Email">
+        </label>
+        <label for="number" id="number-label">
+          Age:
+          <input id="number" name="number" type="number" min="13" max="120" placeholder="Age">
+        </label>
+        <label for="income">
+          Which of the following best describes your current household income?
+          <select id="income" name="income">
+            <option value="" selected disabled hidden>Select one</option>
+            <option value="1">$0 to $19,999</option>
+            <option value="2">$20,000-$49,999</option>
+            <option value="3">$50,000-$89,999</option>
+            <option value="4">$90,000-$129,999</option>
+            <option value="5">$130,000-$149,000</option>
+            <option value="6">$150,000+</option>
+            <option value="0">Prefer not to answer</option>  
+            </optgroup>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend class="legend-pet">Something about your pet</legend>
+        <label for="dropdown">
+          Pet type:
+          <select id="dropdown" name="petType">
+            <option value="" selected disabled hidden>Select one</option>
+            <option value="dogs">Dogs</option>
+            <option value="cats">Cats</option>
+            <option value="fish">Fish</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label>
+          Pet age (years): 
+          <input id="pet-age" name="pet-age" type="number" min="0" max="120" required placeholder="Pet age">
+        </label>
+        <div>
+          <p>What is your monthly pet expense by category?</p>
+          <label for="food-expense">
+            Food and treats: 
+            <select id="food-expense" name="food-expense">
+              <option value="0-99">$0 to $99</option>
+              <option value="100-299">$100 to $299</option>
+              <option value="300-499">$300 to $499</option>
+              <option value="500-699">$500 to $699</option>
+              <option value="700+">$700+</option>
+            </select>
+          </label>
+          <label for="vet-expense">
+            Veterinary care (inlclude insurance): 
+            <select id="vet-expense" name="vet-expense">
+              <option value="0-99">$0 to $99</option>
+              <option value="100-299">$100 to $299</option>
+              <option value="300-499">$300 to $499</option>
+              <option value="500-699">$500 to $699</option>
+              <option value="700+">$700+</option>
+            </select>
+          </label>
+          <label for="accessories-expense">
+            Accessories, toys and other supplies: 
+            <select id="accessories-expense" name="accessories-expense">
+              <option value="0-99">$0 to $99</option>
+              <option value="100-299">$100 to $299</option>
+              <option value="300-499">$300 to $499</option>
+              <option value="500-699">$500 to $699</option>
+              <option value="700+">$700+</option>
+            </select>
+          </label>
+          <label for="service-expense">
+            Grooming, boarding and training: 
+            <select id="service-expense" name="service-expense">
+              <option value="0-99">$0 to $99</option>
+              <option value="100-299">$100 to $299</option>
+              <option value="300-499">$300 to $499</option>
+              <option value="500-699">$500 to $699</option>
+              <option value="700+">$700+</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="legend-expense">Satisfaction with pet expanse</legend>
+        <div>
+        <p>
+          How do you feel about current pet expense:</p>
+          <label for="expense-satisfied">
+            <input id="expense-satisfied" name="expense-satisfaction" value="satisfied" type="radio" checked>
+            Feelings of financial comfort
+          </label>
+          <label for="expense-displeased">
+            <input id="expense-displeased" name="expense-satisfaction" value="displeased" type="radio">
+            Feelings of financial strain
+          </label>
+        </div>
+        <div>
+        <p>Areas where you are willing to spend more: (You may select more than one answer.).</p>
+          <label for="improve-food-expense">
+            <input id="improve-food-expense" name="improve-food-expense" type="checkbox" value="pet-food">
+            Food and treats
+          </label>
+          <label for="improve-vet-expense">
+            <input id="improve-vet-expense" name="improve-vet-expense" type="checkbox" value="pet-vet">
+            Veterinary care
+          </label>
+          <label for="improve-supplies-expense">
+            <input id="improve-supplies-expense" name="improve-supplies-expense" type="checkbox" value="pet-supplies">
+            Accessories, toys and other supplies
+          </label>
+          <label for="improve-service-expense">
+            <input id="improve-service-expense" name="improve-service-expense" type="checkbox" value="pet-services">
+            Grooming, boarding and training
+          </label>
+        </div>
+        
+        <div>
+        <p>Areas where you feel you could spend less: (You may select more than one answer.)</p>
+          <label for="reduce-food-expense">
+            <input id="reduce-food-expense" name="reduce-food-expense" type="checkbox" value="pet-food">
+            Food and treats
+          </label>
+          <label for="reduce-vet-expense">
+            <input id="reduce-vet-expense" name="reduce-vet-expense" type="checkbox" value="pet-vet">
+            Veterinary care
+          </label>
+          <label for="reduce-supplies-expense">
+            <input id="reduce-supplies-expense" name="reduce-supplies-expense" type="checkbox" value="pet-supplies">
+            Accessories, toys and other supplies
+          </label>
+          <label for="reduce-service-expense">
+            <input id="reduce-service-expense" name="reduce-service-expense" type="checkbox" value="pet-services">
+            Grooming, boarding and training
+          </label>
+          <label>
+            Additional comment:
+            <textarea id="comment" name="comment" cols="40" rows="5"></textarea>
+          </label>
+        </div>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>

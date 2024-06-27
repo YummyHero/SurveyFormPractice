@@ -1,0 +1,89 @@
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #393B3A;
+  background-color: #F1F3F2;
+}
+
+h1 {
+  margin: 1em auto 0 auto;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  margin: 1em auto;
+}
+
+form {
+  width: 80%;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+legend {
+  border-radius: 5px;
+  color: #F1F3F2;
+  padding: 1rex 2rex;
+  font-weight: bold;
+  height: 2rem;
+  line-height: 2rem;
+  /*to vertically align the text*/
+}
+
+.legend-pet {
+  background-color: #EE8162;
+}
+
+.legend-yourself {
+  background-color: #57BCBE;
+}
+
+.legend-expense {
+  background-color: #5F65D0;
+}
+
+fieldset {
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  padding: 1rem 2rem;
+}
+
+label {
+  display: block;
+  margin: 1rem 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+  display: block;
+  margin: 5px 0 0 0;
+  min-height: 2em;
+  font-size: 14px;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 1rex;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*use box-sizing to take all padding and margin into consideration in size*/
+}
+
+input[type="submit"] {
+  display: block;
+  background-color: #263342;
+  color: #F1F3F2;
+  border: none;
+  border-radius: 50px;
+  width: 40%;
+  height: 3em;
+  margin: 2em auto;
+  font-size: 18px;
+}
